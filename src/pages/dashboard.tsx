@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
@@ -307,7 +306,7 @@ export default function Dashboard() {
                         <Label htmlFor="style" className="text-foreground">Organic Style</Label>
                         <Select>
                           <SelectTrigger className="biomorphic">
-                            <SelectValue placeholder="Select bio-style" />
+                            <SelectValue>Select bio-style</SelectValue>
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="cellular">Cellular Forms</SelectItem>
@@ -323,7 +322,7 @@ export default function Dashboard() {
                         <Label htmlFor="colors" className="text-foreground">Eco Palette</Label>
                         <Select>
                           <SelectTrigger className="biomorphic-alt">
-                            <SelectValue placeholder="Select eco-palette" />
+                            <SelectValue>Select eco-palette</SelectValue>
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="ocean">Deep Ocean Tones</SelectItem>
@@ -464,7 +463,7 @@ export default function Dashboard() {
                         <Label className="text-foreground">Bio-Fabric Type</Label>
                         <Select>
                           <SelectTrigger className="biomorphic">
-                            <SelectValue placeholder="Select bio-fabric" />
+                            <SelectValue>Select bio-fabric</SelectValue>
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="organic-cotton">Organic Cotton</SelectItem>

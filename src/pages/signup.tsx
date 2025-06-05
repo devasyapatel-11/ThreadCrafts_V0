@@ -7,7 +7,8 @@ import { useRouter } from 'next/router';
 
 const AnimatedTorus = () => {
   return (
-    <TorusKnot args={[1.2, 0.4, 128, 32]}>
+    <mesh position={[0, 0, 0]}>
+      <torusKnotGeometry args={[1.2, 0.4, 128, 32]} />
       <meshPhysicalMaterial
         color="#6EE7B7"
         roughness={0.2}
@@ -17,7 +18,7 @@ const AnimatedTorus = () => {
         transmission={0.7}
         thickness={0.5}
       />
-    </TorusKnot>
+    </mesh>
   );
 };
 
